@@ -1,29 +1,31 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://peritoambiental.es/</loc>
-<lastmod>2026-01-28</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1.0</priority>
-</url>
-<url>
-<loc>https://peritoambiental.es/servicios.html</loc>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://peritoambiental.es/metodologia.html</loc>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://peritoambiental.es/sobre-mi.html</loc>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://peritoambiental.es/contacto.html</loc>
-<changefreq>yearly</changefreq>
-<priority>0.5</priority>
-</url>
-</urlset>
+# ================================
+# Robots.txt – peritoambiental.es
+# ================================
+
+User-agent: *
+Allow: /
+
+# Declaración de sitemap
+Sitemap: https://peritoambiental.es/sitemap.xml
+
+# ================================
+# Restricciones IA (opcional pero coherente)
+# ================================
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /

@@ -12,18 +12,18 @@
 
 <header class="site-header">
   <div class="container">
-   <div class="logo">
-  <a href="index.html" class="logo-card">
-    Servicios técnicos ambientales
-    <span class="logo-name">Víctor Cazorla Fernández</span>
-  </a>
-</div>
+    <div class="logo">
+      <a href="index.html" class="logo-card">
+        <strong>Servicios técnicos ambientales</strong>
+        <span class="logo-name">Víctor Cazorla Fernández</span>
+      </a>
+    </div>
     <nav class="main-nav">
       <ul>
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="metodologia.html">Metodología</a></li>
         <li><a href="sobre-mi.html">Sobre mí</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
       </ul>
     </nav>
   </div>
@@ -35,35 +35,28 @@
     <div class="container">
       <h1>Contacto</h1>
       <p>
-        Puedes explicarme brevemente tu caso a través del formulario.
-        Reviso personalmente todas las consultas y respondo en un plazo máximo
-        de 24–48 horas laborables.
+        Puedes explicarme brevemente tu caso a través del formulario. Reviso personalmente todas las consultas y respondo en un plazo máximo de 24–48 horas laborables.
       </p>
     </div>
   </section>
 
   <section>
     <div class="container">
-
-      <form class="contact-form"
-            action="https://formspree.io/f/xlgbvown"
-            method="POST">
-
+      <form class="contact-form" action="https://formspree.io/f/xlgbvown" method="POST" novalidate>
         <div class="form-grid">
-
           <div class="form-field">
             <label for="nombre">Nombre</label>
-            <input id="nombre" type="text" name="nombre" required>
+            <input id="nombre" type="text" name="nombre" required aria-required="true">
           </div>
 
           <div class="form-field">
             <label for="email">Email</label>
-            <input id="email" type="email" name="email" required>
+            <input id="email" type="email" name="email" required aria-required="true">
           </div>
 
           <div class="form-field">
             <label for="tipo_cliente">Empresa o particular</label>
-            <select id="tipo_cliente" name="tipo_cliente" required>
+            <select id="tipo_cliente" name="tipo_cliente" required aria-required="true">
               <option value="">Selecciona una opción</option>
               <option value="empresa">Empresa</option>
               <option value="particular">Particular</option>
@@ -72,7 +65,7 @@
 
           <div class="form-field">
             <label for="servicio_interes">Servicio de interés</label>
-            <select id="servicio_interes" name="servicio_interes" required>
+            <select id="servicio_interes" name="servicio_interes" required aria-required="true">
               <option value="">Selecciona un servicio</option>
               <option value="peritaje">Peritaje ambiental</option>
               <option value="auditoria">Auditoría / cumplimiento normativo</option>
@@ -85,9 +78,8 @@
 
           <div class="form-field full-width">
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+            <textarea id="mensaje" name="mensaje" rows="6" required aria-required="true"></textarea>
           </div>
-
         </div>
 
         <!-- Formspree extras -->
@@ -97,9 +89,7 @@
         <div class="form-actions">
           <button class="btn" type="submit">Enviar mensaje</button>
         </div>
-
       </form>
-
     </div>
   </section>
 
